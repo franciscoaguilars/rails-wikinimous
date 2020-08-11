@@ -1,0 +1,4 @@
+<% @articles.each do |article| %>
+    <h2><%= link_to article.title, "/articles/#{article.id}" %></h2>
+    <p><%= article.content[0..200] + "..." %></p>
+<% end %>
